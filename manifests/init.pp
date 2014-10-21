@@ -3,10 +3,12 @@
 # Usage:
 #
 #  include transmission
-class transmission {
+class transmission (
+  $version = '2.84'
+){
   package { 'Transmission':
     ensure     => 'installed',
     provider   => 'appdmg',
-    source     => 'http://download.transmissionbt.com/files/Transmission-2.82.dmg'
+    source     => "http://download.transmissionbt.com/files/Transmission-${version}.dmg"
   }
 }
