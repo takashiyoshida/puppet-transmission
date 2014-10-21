@@ -1,3 +1,8 @@
+# Public: Installs Transmission
+#
+# Usage:
+#
+#  include transmission
 class transmission {
   package { 'Transmission':
     ensure     => 'installed',
